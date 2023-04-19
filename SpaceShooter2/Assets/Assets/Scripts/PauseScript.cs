@@ -15,6 +15,13 @@ public class PauseScript : MonoBehaviour
         pauseMenu.SetActive(false);
     }
 
+    public void ContinueGame()
+    {
+        paused = false;
+        pauseMenu.SetActive(false);
+        Time.timeScale = 1f;
+    }
+
     // Update is called once per frame
     void Update()
     {
