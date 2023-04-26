@@ -26,6 +26,13 @@ namespace MinimalShooting
                 // Destroy the enemy.
                 other.GetComponentInParent<Enemy>().DestroyNow();
             }
+            else if (other.CompareTag("Boss"))
+            {
+                OnDamage(other.transform.position);
+
+                // Destroy the enemy.
+                other.GetComponentInParent<Boss>().DestroyNow();
+            }
         }
 
 

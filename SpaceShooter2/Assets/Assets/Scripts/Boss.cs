@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace MinimalShooting
@@ -8,7 +9,7 @@ namespace MinimalShooting
     /// Enemy
     /// This class implements an enemy.
     /// </summary>
-    public class Enemy : MonoBehaviour
+    public class Boss : MonoBehaviour
     {
         enum MovementType
         {
@@ -26,7 +27,6 @@ namespace MinimalShooting
         [SerializeField]
         GameObject prefabExplosion;
 
-
         [Header("Movement speed")]
         [Space(20)]
         [SerializeField]
@@ -35,27 +35,17 @@ namespace MinimalShooting
         [SerializeField]
         float speedMax = 7.0f;
 
+        [Header("Max HP")]
+        [SerializeField]
+        float maxHp = 10.0f;
+
         [Header("Movement direction")]
         [SerializeField]
         Vector3 direction = new Vector3(0, 0, -1);
 
-
         [Header("Movement type")]
         [SerializeField]
         MovementType movementType;
-
-
-        [Header("Enemy Scale")]
-        [SerializeField]
-        float scaleMin = 1.0f;
-
-        [SerializeField]
-        float scaleMax = 1.5f;
-
-        [Header("Max HP")]
-        [SerializeField]
-        float maxHp = 3;
-
 
         // Private variables.
         float speed;
@@ -65,11 +55,13 @@ namespace MinimalShooting
         List<Weapon> weapons;
         GameObject player;
 
-
-        public void Wakeup()
+        public void Awake()
         {
             this.player = GameObject.Find("Player");
             this.weapons = new List<Weapon>(GetComponentsInChildren<Weapon>());
+            
+            // Set the maxHp to 10.
+            this.maxHp = 10.0f;
 
             // Set hidden position to current position.
             // If the movement type will be sets Circle, this variable will be used to let Transform move down.
@@ -87,25 +79,6 @@ namespace MinimalShooting
             // This determines random movement speed.
             this.speed = Random.Range(this.speedMin, this.speedMax);
 
-            // This determines random transform scale.
-            float scale = Random.Range(this.scaleMin, this.scaleMax);
-            transform.localScale = new Vector3(scale, scale, scale);
-
-            // Calculate new hp that depend by size.
-            // If the size is bigger, then the enemy has much more hp than the smaller one.
-            float power = 6.0f;
-            float newHp = Mathf.Pow(scale, power) * this.maxHp;
-            newHp = Mathf.Clamp(newHp, this.maxHp, 100);
-
-            // Refresh hp variables.
-            this.maxHp = newHp;
-            this.currentHp = newHp;
-
-            // Calculate new speed that depend by size.
-            // If the size is smaller, then the enemy has much more speed than the bigger one.
-            float t = 1.0f - (scale / this.scaleMax);
-            this.speed = Mathf.Lerp(this.speedMin, this.speedMax, t);
-
             // Calculate self-rotation speed.
             float speedRate = this.speed / this.speedMin;
             GetComponentInChildren<Rotator>().SetSpeedOption(speedRate);
@@ -122,15 +95,6 @@ namespace MinimalShooting
             }
         }
 
-        void Start()
-        {
-            currentHp = maxHp;
-            // Check if the prefab name is EnemyWhite 1
-            if (gameObject.name == "EnemyWhite 1")
-            {
-                currentHp = 10;
-            }
-        }
 
         /// <summary>
         /// When the enemy gets damaged.
@@ -138,11 +102,6 @@ namespace MinimalShooting
         /// <param name="collisionPoint"></param>
         public void OnDamage(Vector3 collisionPoint)
         {
-            // Knockback.
-            //Vector3 pos = transform.position;
-            //pos.z += 0.2f;
-            //transform.position = pos;
-
             // Instantiate the damage effect.
             GameObject.Instantiate(this.prefabDamage, collisionPoint, Quaternion.identity);
 
@@ -153,15 +112,39 @@ namespace MinimalShooting
             }
 
             // Decrease current hp.
-            --this.currentHp;
+            this.currentHp -= 1.0f;
 
-            // If the current hp is less equal than zero, it will be destroyed.
+            // If the current hp is less than or equal to zero, destroy the boss.
             if (this.currentHp <= 0.0f)
             {
                 DestroyNow();
             }
+            else if (this.currentHp % 5 == 0) // Boss will flash every 5 hits.
+            {
+                StartCoroutine(Flash());
+            }
         }
 
+        private IEnumerator Flash()
+        {
+            // Get all the materials in the child game objects.
+            Material[] materials = GetComponentsInChildren<Renderer>().SelectMany(r => r.materials).ToArray();
+
+            // Change the materials to the flashing material.
+            foreach (Material material in materials)
+            {
+                material.color = Color.red;
+            }
+
+            // Wait for a short time.
+            yield return new WaitForSeconds(0.1f);
+
+            // Change the materials back to their original colors.
+            foreach (Material material in materials)
+            {
+                material.color = Color.white;
+            }
+        }
 
         public void DestroyNow()
         {

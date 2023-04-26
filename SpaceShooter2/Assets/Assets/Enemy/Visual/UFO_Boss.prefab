@@ -12,14 +12,9 @@ GameObject:
   - component: {fileID: 3380720343860295463}
   - component: {fileID: 652543058300781549}
   - component: {fileID: 2220232653120354544}
-  - component: {fileID: 2498546912818460578}
-  - component: {fileID: 5742923329584727541}
-  - component: {fileID: 8631535139589743383}
-  - component: {fileID: 99338191140951591}
-  - component: {fileID: 2861590010208445959}
   m_Layer: 0
   m_Name: UFO_Boss
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -106,108 +101,6 @@ MonoBehaviour:
   turnSpeed: 0.1
   axis: {x: 0, y: 0, z: 1}
   randomAxis: 0
---- !u!114 &2498546912818460578
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1301170875462443576}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91b9457ed34b3d546a4f1ecbd40fbdbe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefabDamage: {fileID: 5677757216019247570, guid: 31dce7d79db19264f880bd38a6fddb4d,
-    type: 3}
-  prefabExplosion: {fileID: 5677757216019247570, guid: 9948f043eca0c2348988e0c51687194f,
-    type: 3}
-  speedMin: 10
-  speedMax: 10
-  direction: {x: 1, y: 1, z: 0}
-  movementType: 3
-  scaleMin: 1
-  scaleMax: 1
-  maxHp: 100
---- !u!54 &5742923329584727541
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1301170875462443576}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!65 &8631535139589743383
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1301170875462443576}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.0051905415, y: 0.0064619714, z: 0.05994659}
-  m_Center: {x: -0.00032539392, y: -0.00029382206, z: 0.010561834}
---- !u!114 &99338191140951591
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1301170875462443576}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b228b0d436b40e4aa795c90b30ae61c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &2861590010208445959
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1301170875462443576}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66634686b203b3246aa6923e4917e9b7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefabBullet: {fileID: 2246129215633105459, guid: bb5c709eb6e45304483bf4c16bd6dafe,
-    type: 3}
-  interval: 10
-  speed: 10
-  direction: {x: 0, y: 0, z: 1}
-  toPlayer: 1
-  isMissile: 0
 --- !u!1 &6830909546942539981
 GameObject:
   m_ObjectHideFlags: 0

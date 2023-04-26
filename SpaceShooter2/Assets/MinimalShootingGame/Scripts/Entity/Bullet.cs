@@ -15,7 +15,7 @@ namespace MinimalShooting
     {
         // Private variables.
         // Default direction.
-        Vector3 direction = new Vector3(0, 0, 1);
+        Vector3 direction = new Vector3(0f, 0f, -1f);
 
         // Default speed.
         float speed = 1.0f;
@@ -24,7 +24,6 @@ namespace MinimalShooting
         bool isFollowTarget = false;
         // The missile target.
         Transform followTarget = null;
-
 
         public void SetDirection(Vector3 direction)
         {

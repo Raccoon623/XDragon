@@ -1,3 +1,4 @@
+using MinimalShooting;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -15,6 +16,6 @@ public class Boss1Spawner : MonoBehaviour
     void SpawnUFOBoss()
     {
         GameObject ufoBoss = Instantiate(ufoBossPrefab, transform.position, Quaternion.identity);
-        ufoBoss.transform.rotation = Quaternion.Euler(-90f, 0f, 0f);
+        ufoBoss.transform.rotation = Quaternion.Euler(0f, 0f, 0f);
     }
 }

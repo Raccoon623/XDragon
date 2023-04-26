@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace MinimalShooting
 {
@@ -100,22 +101,5 @@ namespace MinimalShooting
             return transform.position + new Vector3(x, y, z);
         }
 
-
-        /// <summary>
-        /// Draw the rectanble of this spawn area for debug.
-        /// </summary>
-        private void OnDrawGizmos()
-        {
-            Vector3 leftTop = transform.position + new Vector3(-this.spawnArea.x, this.spawnArea.y, this.spawnArea.z);
-            Vector3 rightTop = transform.position + new Vector3(this.spawnArea.x, this.spawnArea.y, this.spawnArea.z);
-            Vector3 leftBottom = transform.position + new Vector3(-this.spawnArea.x, this.spawnArea.y, -this.spawnArea.z);
-            Vector3 rightBottom = transform.position + new Vector3(this.spawnArea.x, this.spawnArea.y, -this.spawnArea.z);
-
-            Gizmos.color = Color.red;
-            Gizmos.DrawLine(leftTop, rightTop);
-            Gizmos.DrawLine(rightTop, rightBottom);
-            Gizmos.DrawLine(rightBottom, leftBottom);
-            Gizmos.DrawLine(leftBottom, leftTop);
-        }
     }
 }

@@ -9,10 +9,10 @@ public class EnemySpawnController : MonoBehaviour
     IEnumerator Start()
     {
         // Wait for 10 seconds
-        yield return new WaitForSeconds(20);
+        yield return new WaitForSeconds(5);
 
         // Toggle the game objects
         EnemySpawner.SetActive(false);
-        EnemySpawner2.SetActive(false);
+        EnemySpawner2.SetActive(true);
     }
 }
