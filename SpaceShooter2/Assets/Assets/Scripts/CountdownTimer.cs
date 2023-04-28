@@ -21,7 +21,7 @@ public class CountdownTimer : MonoBehaviour
         if (currentTime <= 0f)
         {
             currentTime = 0f;
-            timeText.text = "Time's up!";
+            timeText.text = "Defeat The UFO Boss!";
             //Do whatever you need to do when the timer reaches 0
         }
     }

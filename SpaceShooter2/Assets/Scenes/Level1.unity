@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.017860753, g: 0.08657346, b: 0.23159468, a: 1}
+  m_IndirectSpecularColor: {r: 0.010559549, g: 0.05580128, b: 0.15991262, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -240,7 +240,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeText: {fileID: 479371805}
-  countdownTime: 10
+  countdownTime: 60
 --- !u!1 &321289335
 GameObject:
   m_ObjectHideFlags: 0
@@ -434,6 +434,7 @@ GameObject:
   m_Component:
   - component: {fileID: 483015353}
   - component: {fileID: 483015352}
+  - component: {fileID: 483015354}
   m_Layer: 0
   m_Name: EnemySpawnController
   m_TagString: Untagged
@@ -470,6 +471,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &483015354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 483015351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82aff6e32f96fda4c90b9f3928d26866, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waveText: {fileID: 1765484017}
 --- !u!1 &491712294
 GameObject:
   m_ObjectHideFlags: 0
@@ -802,8 +816,8 @@ MonoBehaviour:
   startDelay: 1
   intervalMin: 1
   intervalMax: 3
-  countMin: 20
-  countMax: 20
+  countMin: 2
+  countMax: 5
   spawnArea: {x: 5, y: 1, z: 2}
 --- !u!4 &732039634
 Transform:
@@ -834,11 +848,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabEnemies:
   - {fileID: 1803528520333080073, guid: 2ed6355b9dc6d4745aebca481288556c, type: 3}
-  startDelay: 10
+  startDelay: 30
   intervalMin: 1
   intervalMax: 3
-  countMin: 2
-  countMax: 5
+  countMin: 1
+  countMax: 1
   spawnArea: {x: 5, y: 1, z: 2}
 --- !u!1 &744146307
 GameObject:
@@ -2011,7 +2025,7 @@ GameObject:
   - component: {fileID: 1765484018}
   - component: {fileID: 1765484017}
   m_Layer: 5
-  m_Name: Wave information
+  m_Name: WaveInfo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2057,7 +2071,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Wave
+  m_text: Wave 1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
