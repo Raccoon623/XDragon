@@ -20,9 +20,19 @@ namespace MinimalShooting.ControllerPackage
         // Private variables.
         Vector3 firstTouchDistance;
 
+        public float KeyboardMovementSpeed
+        {
+            get { return keyboardMovementSpeed; }
+            set { keyboardMovementSpeed = value; }
+        }
 
         void Update()
         {
+            float horizontal = Input.GetAxis("Horizontal");
+            float vertical = Input.GetAxis("Vertical");
+
+            Vector3 movement = new Vector3(horizontal, 0f, vertical);
+            transform.position += movement * keyboardMovementSpeed * Time.deltaTime;
             Movement();
         }
 
