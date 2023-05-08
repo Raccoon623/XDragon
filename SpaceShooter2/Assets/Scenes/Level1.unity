@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.008793033, g: 0.044161253, b: 0.13240057, a: 1}
+  m_IndirectSpecularColor: {r: 0.016964627, g: 0.08545417, b: 0.23028323, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2303,7 +2303,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ufoBossPrefab: {fileID: 8510579589746802706, guid: 2659d8ca05e7aed4381a4ca9cd27736f,
     type: 3}
-  spawnDelay: 5
+  spawnDelay: 3
 --- !u!4 &1858509735
 Transform:
   m_ObjectHideFlags: 0
