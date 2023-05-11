@@ -262,8 +262,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabDamage: {fileID: 5677757216019247570, guid: 31dce7d79db19264f880bd38a6fddb4d,
     type: 3}
-  prefabExplosion: {fileID: 5677757216019247570, guid: 9948f043eca0c2348988e0c51687194f,
-    type: 3}
+  prefabExplosion: {fileID: 100000, guid: 13266a9cf8da28e41bfa61b378dfabc5, type: 3}
   speedMin: 2
   speedMax: 20
   direction: {x: 0, y: 0, z: -1}

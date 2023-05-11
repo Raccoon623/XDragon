@@ -186,7 +186,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabDamage: {fileID: 5677757216019247570, guid: 31dce7d79db19264f880bd38a6fddb4d,
     type: 3}
-  prefabExplosion: {fileID: 5677757216019247570, guid: bf40cb5230fb190428aa3133893afa94,
+  prefabExplosion: {fileID: 1088249624829290, guid: a5986c220614bc143866ceb522e86b82,
     type: 3}
   speedMin: 2
   speedMax: 20
@@ -424,6 +424,27 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7364020188647920219, guid: 8654826c58b62c4479aeaa06ea64d9a7,
+        type: 3}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7364020188647920219, guid: 8654826c58b62c4479aeaa06ea64d9a7,
+        type: 3}
+      propertyPath: interval
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7364020188647920219, guid: 8654826c58b62c4479aeaa06ea64d9a7,
+        type: 3}
+      propertyPath: isMissile
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7364020188647920219, guid: 8654826c58b62c4479aeaa06ea64d9a7,
+        type: 3}
+      propertyPath: prefabBullet
+      value: 
+      objectReference: {fileID: -80982082763155548, guid: 283fc2ab05434c841a15d94b7d7c083b,
+        type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
