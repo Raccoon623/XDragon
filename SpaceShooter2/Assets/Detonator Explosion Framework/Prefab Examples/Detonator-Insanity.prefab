@@ -130,11 +130,11 @@ MonoBehaviour:
   on: 1
   detonatorControlled: 1
   startSize: 1
-  size: 2
+  size: 5
   explodeDelayMin: 0
   explodeDelayMax: 0
   startDuration: 2
-  duration: 0.3
+  duration: 1
   timeScale: 1
   startDetail: 1
   detail: 1
@@ -165,11 +165,11 @@ MonoBehaviour:
   on: 1
   detonatorControlled: 1
   startSize: 1
-  size: 2.59
+  size: 5
   explodeDelayMin: 0
   explodeDelayMax: 0
   startDuration: 2
-  duration: 1
+  duration: 8
   timeScale: 1
   startDetail: 1
   detail: 14.78743
@@ -180,7 +180,7 @@ MonoBehaviour:
   startForce: {x: 0, y: 0, z: 0}
   force: {x: 0, y: -9.81, z: 0}
   startVelocity: {x: 0, y: 0, z: 0}
-  velocity: {x: 400, y: 400, z: 400}
+  velocity: {x: 30, y: 30, z: 30}
   detailThreshold: 0
   sparksMaterial: {fileID: 0}
 --- !u!114 &11400008
@@ -195,14 +195,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 745312967000e3c449713c45a6a516f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  on: 0
+  on: 1
   detonatorControlled: 1
   startSize: 1
   size: 4.9810963
   explodeDelayMin: 0
   explodeDelayMax: 0
   startDuration: 2
-  duration: 0.25
+  duration: 2
   timeScale: 1
   startDetail: 1
   detail: 1
@@ -269,11 +269,11 @@ MonoBehaviour:
   on: 1
   detonatorControlled: 1
   startSize: 1
-  size: 1
+  size: 2
   explodeDelayMin: 0
   explodeDelayMax: 0
   startDuration: 2
-  duration: 1
+  duration: 2
   timeScale: 1
   startDetail: 1
   detail: 1
@@ -322,7 +322,7 @@ MonoBehaviour:
   startForce: {x: 0, y: 0, z: 0}
   force: {x: 0, y: 0, z: 0}
   startVelocity: {x: 0, y: 0, z: 0}
-  velocity: {x: 300, y: 300, z: 300}
+  velocity: {x: 100, y: 100, z: 100}
   detailThreshold: 0
   sprayObject: {fileID: 100000, guid: abdc837d9a07acd409959e581ef68e61, type: 3}
   count: 8
