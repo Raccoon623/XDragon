@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.016401188, g: 0.08189166, b: 0.2217176, a: 1}
+  m_IndirectSpecularColor: {r: 0.0154952835, g: 0.080118604, b: 0.21775639, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -678,7 +678,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -4.20282, y: -44.8}
+  m_AnchoredPosition: {x: -4.202881, y: -44.799988}
   m_SizeDelta: {x: -921.0256, y: -636.2451}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &491712296
@@ -3743,6 +3743,16 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: d8755fa41e1029b47bd478eb3470f210, type: 2}
     - target: {fileID: 3718967648664539300, guid: 2422d7cfdfcbaaf43834d656ae8345a3,
         type: 3}
+      propertyPath: thrusterOffset
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3718967648664539300, guid: 2422d7cfdfcbaaf43834d656ae8345a3,
+        type: 3}
+      propertyPath: thrusterEffectPrefab
+      value: 
+      objectReference: {fileID: 100004, guid: 10a7ec2a2783770419a38059c45ea8b3, type: 3}
+    - target: {fileID: 3718967648664539300, guid: 2422d7cfdfcbaaf43834d656ae8345a3,
+        type: 3}
       propertyPath: joystickMovementSpeed
       value: 4
       objectReference: {fileID: 0}
@@ -3774,7 +3784,7 @@ PrefabInstance:
     - target: {fileID: 3753420583716909292, guid: 2422d7cfdfcbaaf43834d656ae8345a3,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -6
+      value: -4.59
       objectReference: {fileID: 0}
     - target: {fileID: 3753420583716909292, guid: 2422d7cfdfcbaaf43834d656ae8345a3,
         type: 3}

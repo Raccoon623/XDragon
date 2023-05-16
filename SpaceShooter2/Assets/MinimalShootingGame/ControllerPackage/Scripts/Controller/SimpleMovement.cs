@@ -16,9 +16,22 @@ namespace MinimalShooting.ControllerPackage
         [SerializeField]
         float keyboardMovementSpeed;
 
+        [SerializeField]
+        private GameObject thrusterEffectPrefab;
+
+        // Reference to the instantiated thruster effect
+        private GameObject thrusterEffect;
+        
+        [SerializeField]
+        private float thrusterOffset = 1f; // Adjust this value to set the desired offset along the -Z axis
 
         // Private variables.
         Vector3 firstTouchDistance;
+
+        [SerializeField] float thrusterLingerDuration = 1.0f;
+
+        private float thrusterLingerTimer = 0.0f;
+        private bool isThrusterActive = false;
 
         public float KeyboardMovementSpeed
         {
@@ -34,6 +47,45 @@ namespace MinimalShooting.ControllerPackage
             Vector3 movement = new Vector3(horizontal, 0f, vertical);
             transform.position += movement * keyboardMovementSpeed * Time.deltaTime;
             Movement();
+
+            UpdateThrusterEffect();
+        }
+
+        void UpdateThrusterEffect()
+        {
+            Vector3 movement = new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical"));
+
+            if (movement != Vector3.zero)
+            {
+                if (!isThrusterActive)
+                {
+                    Vector3 effectPosition = transform.position - new Vector3(0f, 0f, thrusterOffset);
+                    thrusterEffect = Instantiate(thrusterEffectPrefab, effectPosition, Quaternion.LookRotation(-movement));
+                    thrusterEffect.transform.SetParent(transform);
+                    isThrusterActive = true;
+                }
+                else
+                {
+                    thrusterEffect.transform.rotation = Quaternion.LookRotation(-movement);
+                }
+
+                // Reset the thruster linger timer
+                thrusterLingerTimer = thrusterLingerDuration;
+            }
+            else
+            {
+                // Check if the thruster effect should be destroyed
+                if (isThrusterActive)
+                {
+                    thrusterLingerTimer -= Time.deltaTime;
+                    if (thrusterLingerTimer <= 0f)
+                    {
+                        Destroy(thrusterEffect);
+                        thrusterEffect = null;
+                        isThrusterActive = false;
+                    }
+                }
+            }
         }
 
 
