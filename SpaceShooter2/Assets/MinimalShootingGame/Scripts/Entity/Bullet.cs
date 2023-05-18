@@ -13,6 +13,9 @@ namespace MinimalShooting
     /// </summary>
     public class Bullet : MonoBehaviour
     {
+        // Public variables.
+        public GameObject explosionPrefab; // Reference to the explosion prefab
+
         // Private variables.
         // Default direction.
         Vector3 direction = new Vector3(0f, 0f, -1f);
@@ -46,6 +49,18 @@ namespace MinimalShooting
             this.isFollowTarget = true;
         }
 
+        private void OnTriggerEnter(Collider other)
+        {
+            // Check if the bullet collides with an enemy tagged as "Enemy"
+            if (other.CompareTag("Enemy"))
+            {
+                // Instantiate the explosion effect at the collision point
+                Instantiate(explosionPrefab, transform.position, Quaternion.identity);
+
+                // Destroy the bullet
+                Destroy(gameObject);
+            }
+        }
 
         /// <summary>
         /// Find a nearest enemy.

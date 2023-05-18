@@ -344,7 +344,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5267221842070399373}
-  - component: {fileID: 1686964174548439568}
   - component: {fileID: 2246129215633105459}
   - component: {fileID: 3217784964648147336}
   - component: {fileID: 3267233581089968515}
@@ -373,19 +372,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1686964174548439568
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4016322583427669576}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 386a555233f2b4647a0b7b14bcccad0c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  explosionPrefab: {fileID: 100000, guid: 2a6951ec14b27ed4da27d13818dbebd2, type: 3}
 --- !u!114 &2246129215633105459
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -398,6 +384,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd4e00da1e20c4459ffc4fad5f54a8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  explosionPrefab: {fileID: 1088249624829290, guid: a5986c220614bc143866ceb522e86b82,
+    type: 3}
 --- !u!54 &3217784964648147336
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -544,7 +532,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3

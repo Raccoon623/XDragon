@@ -54,9 +54,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   size: 12
-  color: {r: 0.5432987, g: 0.72156864, b: 0.59792185, a: 0.3882353}
+  color: {r: 0.8125503, g: 1, b: 0.2584905, a: 0.3882353}
   explodeOnStart: 1
-  duration: 5.3579783
+  duration: 4
   detail: 1
   upwardsBias: 0
   destroyTime: 10.520339
@@ -102,7 +102,7 @@ MonoBehaviour:
   startDetail: 1
   detail: 1
   startColor: {r: 1, g: 1, b: 1, a: 1}
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.990566, g: 0.62985045, b: 0.62985045, a: 1}
   startLocalPosition: {x: 0, y: 0, z: 0}
   localPosition: {x: 0, y: 0, z: 0}
   startForce: {x: 0, y: 0, z: 0}
@@ -134,12 +134,12 @@ MonoBehaviour:
   explodeDelayMin: 0
   explodeDelayMax: 0
   startDuration: 2
-  duration: 1
+  duration: 2
   timeScale: 1
   startDetail: 1
   detail: 1
   startColor: {r: 1, g: 1, b: 1, a: 1}
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.9528302, g: 0.49798858, b: 0.93772435, a: 1}
   startLocalPosition: {x: 0, y: 0, z: 0}
   localPosition: {x: 0, y: 0, z: 0}
   startForce: {x: 0, y: 0, z: 0}
@@ -169,18 +169,18 @@ MonoBehaviour:
   explodeDelayMin: 0
   explodeDelayMax: 0
   startDuration: 2
-  duration: 8
+  duration: 6
   timeScale: 1
   startDetail: 1
   detail: 14.78743
   startColor: {r: 1, g: 1, b: 1, a: 1}
-  color: {r: 0.9307692, g: 0.7131433, b: 0.7131433, a: 1}
+  color: {r: 0.42506436, g: 0.3745283, b: 0.5, a: 1}
   startLocalPosition: {x: 0, y: 0, z: 0}
   localPosition: {x: 0, y: 0, z: 0}
   startForce: {x: 0, y: 0, z: 0}
   force: {x: 0, y: -9.81, z: 0}
   startVelocity: {x: 0, y: 0, z: 0}
-  velocity: {x: 30, y: 30, z: 30}
+  velocity: {x: 100, y: 100, z: 30}
   detailThreshold: 0
   sparksMaterial: {fileID: 0}
 --- !u!114 &11400008
@@ -202,12 +202,12 @@ MonoBehaviour:
   explodeDelayMin: 0
   explodeDelayMax: 0
   startDuration: 2
-  duration: 2
+  duration: 4
   timeScale: 1
   startDetail: 1
   detail: 1
   startColor: {r: 1, g: 1, b: 1, a: 1}
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 0.964442, g: 0.98039216, b: 0.14117646, a: 1}
   startLocalPosition: {x: 0, y: 0, z: 0}
   localPosition: {x: 0, y: 1.0799996, z: 0}
   startForce: {x: 0, y: 0, z: 0}
@@ -231,7 +231,7 @@ MonoBehaviour:
   on: 1
   detonatorControlled: 1
   startSize: 1
-  size: 1
+  size: 2
   explodeDelayMin: 0.029999988
   explodeDelayMax: 0.119999975
   startDuration: 2
@@ -240,7 +240,7 @@ MonoBehaviour:
   startDetail: 1
   detail: 1.2099998
   startColor: {r: 1, g: 1, b: 1, a: 1}
-  color: {r: 1, g: 0.8899964, b: 0.8093525, a: 0.21960784}
+  color: {r: 0.2942862, g: 0.9339623, b: 0.42611107, a: 0.21960784}
   startLocalPosition: {x: 0, y: 0, z: 0}
   localPosition: {x: 0, y: 0, z: 0}
   startForce: {x: 0, y: 0, z: 0}
@@ -269,7 +269,7 @@ MonoBehaviour:
   on: 1
   detonatorControlled: 1
   startSize: 1
-  size: 2
+  size: 3
   explodeDelayMin: 0
   explodeDelayMax: 0
   startDuration: 2
@@ -278,7 +278,7 @@ MonoBehaviour:
   startDetail: 1
   detail: 1
   startColor: {r: 1, g: 1, b: 1, a: 1}
-  color: {r: 1, g: 0.423, b: 0, a: 0.5}
+  color: {r: 1, g: 0.9606022, b: 0, a: 0.5}
   startLocalPosition: {x: 0, y: 0, z: 0}
   localPosition: {x: 0, y: 0, z: 0}
   startForce: {x: 0, y: 0, z: 0}
@@ -307,7 +307,7 @@ MonoBehaviour:
   on: 1
   detonatorControlled: 1
   startSize: 1
-  size: 1.0148906
+  size: 2
   explodeDelayMin: 0.059999995
   explodeDelayMax: 0.11465563
   startDuration: 2
@@ -316,13 +316,13 @@ MonoBehaviour:
   startDetail: 1
   detail: 1
   startColor: {r: 1, g: 1, b: 1, a: 1}
-  color: {r: 1, g: 1, b: 1, a: 1}
+  color: {r: 1, g: 0.032075405, b: 0.032075405, a: 1}
   startLocalPosition: {x: 0, y: 0, z: 0}
   localPosition: {x: 0, y: 0, z: 0}
   startForce: {x: 0, y: 0, z: 0}
   force: {x: 0, y: 0, z: 0}
   startVelocity: {x: 0, y: 0, z: 0}
-  velocity: {x: 100, y: 100, z: 100}
+  velocity: {x: 75, y: 75, z: 75}
   detailThreshold: 0
   sprayObject: {fileID: 100000, guid: abdc837d9a07acd409959e581ef68e61, type: 3}
   count: 8
@@ -344,11 +344,11 @@ MonoBehaviour:
   on: 1
   detonatorControlled: 1
   startSize: 1
-  size: 1
+  size: 2
   explodeDelayMin: 0
   explodeDelayMax: 0
   startDuration: 2
-  duration: 2
+  duration: 6
   timeScale: 1
   startDetail: 1
   detail: 1
@@ -384,4 +384,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneIndex: 3
-  delay: 7
+  delay: 9
