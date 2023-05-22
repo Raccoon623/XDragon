@@ -32,6 +32,10 @@ public class FireKey : MonoBehaviour
     [SerializeField]
     bool isMissile = false;
 
+    [Header("Sound Effect")]
+    [SerializeField]
+    private AudioClip soundEffect;
+
     private void OnEnable()
     {
         StartCoroutine(FireLoop());
@@ -50,6 +54,12 @@ public class FireKey : MonoBehaviour
                 Bullet bullet = GameObject.Instantiate(this.prefabBullet);
                 bullet.transform.position = transform.position;
                 bullet.transform.rotation = transform.rotation;
+
+                // Play sound effect if available
+                if (soundEffect != null)
+                {
+                    AudioSource.PlayClipAtPoint(soundEffect, bullet.transform.position);
+                }
 
                 bullet.SetDirection(transform.forward);
                 bullet.SetSpeed(this.speed);
