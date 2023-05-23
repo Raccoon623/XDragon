@@ -8422,22 +8422,22 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: d150e88efdc9038458cdddb9240841c9,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.5
+      value: 0.51078856
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d150e88efdc9038458cdddb9240841c9,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.5
+      value: 0.4889735
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d150e88efdc9038458cdddb9240841c9,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.5
+      value: -0.51078856
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d150e88efdc9038458cdddb9240841c9,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.5
+      value: -0.4889735
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d150e88efdc9038458cdddb9240841c9,
         type: 3}
@@ -8452,7 +8452,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: d150e88efdc9038458cdddb9240841c9,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -90
+      value: -87.5
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d150e88efdc9038458cdddb9240841c9,
         type: 3}
@@ -8462,7 +8462,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: d150e88efdc9038458cdddb9240841c9,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7835065154282111898}
   m_SourcePrefab: {fileID: 100100000, guid: d150e88efdc9038458cdddb9240841c9, type: 3}
 --- !u!4 &3551360482608960819 stripped
 Transform:
@@ -8470,3 +8474,21 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 3945803044112380632}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &4180227930170068873 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: d150e88efdc9038458cdddb9240841c9,
+    type: 3}
+  m_PrefabInstance: {fileID: 3945803044112380632}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7835065154282111898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4180227930170068873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 817e8dcf0060f494aa4eb04f39f01c2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
