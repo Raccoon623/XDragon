@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0027292476, g: 0.012217202, b: 0.05356603, a: 1}
+  m_IndirectSpecularColor: {r: 0.01101164, g: 0.062990844, b: 0.18412572, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -12107,6 +12107,7 @@ GameObject:
   - component: {fileID: 1781528498}
   - component: {fileID: 1781528499}
   - component: {fileID: 1781528500}
+  - component: {fileID: 1781528501}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -12215,6 +12216,19 @@ MonoBehaviour:
   objectA: {fileID: 1790520817}
   objectB: {fileID: 1776746972}
   toggleButton: {fileID: 1251558482}
+--- !u!114 &1781528501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1781528493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e7df35becd90be42a3093297f93d52b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToCheck: {fileID: 1776746972}
 --- !u!1001 &1790520816
 PrefabInstance:
   m_ObjectHideFlags: 0

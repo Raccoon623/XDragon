@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5959134725810562582}
   - component: {fileID: 2981129282906855011}
   - component: {fileID: 837466682854752881}
-  - component: {fileID: 2237338694002384060}
+  - component: {fileID: 72758391564303820}
   m_Layer: 0
   m_Name: Cube
   m_TagString: PlayerBullet
@@ -62,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ca37294d4bb1fef4b8950e902cc88016, type: 2}
+  - {fileID: 2100000, guid: ddec17641fa2dfb4ebe69f7ba18323e5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -84,7 +84,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &2237338694002384060
+--- !u!65 &72758391564303820
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -103,8 +103,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 15.807119, z: 1}
+  m_Center: {x: 0, y: -0.293595, z: 0}
 --- !u!1 &4016322583427669576
 GameObject:
   m_ObjectHideFlags: 0
