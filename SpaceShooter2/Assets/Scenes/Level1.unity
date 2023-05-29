@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.016188312, g: 0.08186535, b: 0.22031868, a: 1}
+  m_IndirectSpecularColor: {r: 0.010646908, g: 0.05597245, b: 0.16033, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -997,16 +997,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabEnemies:
   - {fileID: 1803528520333080073, guid: 759e7c4b24b8b454f8424e1e61d11da9, type: 3}
-  - {fileID: 1803528520333080073, guid: 759e7c4b24b8b454f8424e1e61d11da9, type: 3}
-  - {fileID: 1803528520333080073, guid: 759e7c4b24b8b454f8424e1e61d11da9, type: 3}
-  - {fileID: 1803528520333080073, guid: 759e7c4b24b8b454f8424e1e61d11da9, type: 3}
-  - {fileID: 1803528520333080073, guid: 759e7c4b24b8b454f8424e1e61d11da9, type: 3}
-  - {fileID: 1803528520333080073, guid: 759e7c4b24b8b454f8424e1e61d11da9, type: 3}
-  startDelay: 1
+  startDelay: 5
   intervalMin: 1
   intervalMax: 3
-  countMin: 2
-  countMax: 5
+  countMin: 5
+  countMax: 15
   spawnArea: {x: 5, y: 1, z: 2}
 --- !u!4 &732039634
 Transform:
@@ -1016,7 +1011,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 732039632}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 15}
+  m_LocalPosition: {x: -1.18, y: 0, z: 15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2327,7 +2322,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1553699102
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2341,8 +2336,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefabEnemies:
-  - {fileID: 1803528520333080073, guid: 2659d8ca05e7aed4381a4ca9cd27736f, type: 3}
-  startDelay: 1
+  - {fileID: 1803528520333080073, guid: 2ed6355b9dc6d4745aebca481288556c, type: 3}
+  startDelay: 20
   intervalMin: 1
   intervalMax: 3
   countMin: 2
@@ -2356,7 +2351,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1553699101}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 15}
+  m_LocalPosition: {x: 2.35, y: 0, z: 15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
