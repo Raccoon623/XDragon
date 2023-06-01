@@ -162,7 +162,7 @@ Transform:
   m_GameObject: {fileID: 8510579589746802706}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1990037267757147478}
@@ -187,12 +187,12 @@ MonoBehaviour:
   prefabDamage: {fileID: 5677757216019247570, guid: 31dce7d79db19264f880bd38a6fddb4d,
     type: 3}
   prefabExplosion: {fileID: 100000, guid: c8fd86fe5050dc04bb501b291c30f591, type: 3}
-  speedMin: 2
-  speedMax: 20
+  speedMin: 3
+  speedMax: 18
   direction: {x: 0, y: 0, z: -1}
   movementType: 1
-  scaleMin: 0.7
-  scaleMax: 1.5
+  scaleMin: 0.8
+  scaleMax: 1.2
   maxHp: 3
 --- !u!54 &2659143976182174506
 Rigidbody:
@@ -303,6 +303,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: AlienShip
+      objectReference: {fileID: 0}
+    - target: {fileID: 2001732653117242100, guid: 43c79fe5dbc04e3489867b7dc88054fb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6398110884544158310, guid: 43c79fe5dbc04e3489867b7dc88054fb,
         type: 3}

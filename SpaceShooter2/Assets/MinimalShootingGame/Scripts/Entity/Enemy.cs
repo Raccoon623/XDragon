@@ -128,7 +128,7 @@ namespace MinimalShooting
             // Check if the prefab name is EnemyWhite 1
             if (gameObject.name == "EnemyWhite 1")
             {
-                currentHp = 10;
+                currentHp = 8f;
             }
         }
 
@@ -226,7 +226,7 @@ namespace MinimalShooting
                         float x = Mathf.Cos(Time.time * rate);
 
                         // Cos returns -1 ~ +1, so we should multiply a radius to get the final position.
-                        float radius = 3.0f;
+                        float radius = 4.5f;
                         pos.x = x * radius;
 
                         // Apply it. x variable from Cos, other variables from the velocity.

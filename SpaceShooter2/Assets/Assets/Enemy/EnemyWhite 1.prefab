@@ -234,7 +234,7 @@ MonoBehaviour:
   movementType: 1
   scaleMin: 1
   scaleMax: 1
-  maxHp: 350
+  maxHp: 250
 --- !u!1001 &3572767481448239658
 PrefabInstance:
   m_ObjectHideFlags: 0
