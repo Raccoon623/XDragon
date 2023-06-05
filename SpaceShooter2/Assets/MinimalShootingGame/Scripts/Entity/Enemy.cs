@@ -18,6 +18,8 @@ namespace MinimalShooting
             Circle,
         }
 
+        public int scoreValue = 1; // Score value for destroying this enemy
+
         [Header("Prefab damage")]
         [SerializeField]
         GameObject prefabDamage;
@@ -132,6 +134,8 @@ namespace MinimalShooting
             }
         }
 
+        // Reference to the ScoreSystem script
+        public ScoreSystem scoreSystem;
         /// <summary>
         /// When the enemy gets damaged.
         /// </summary>
@@ -168,6 +172,11 @@ namespace MinimalShooting
             // Instantiate the destroy effect.
             GameObject.Instantiate(this.prefabExplosion, transform.position, Quaternion.identity);
 
+            if (ScoreSystem.Instance != null)
+            {
+                ScoreSystem.Instance.IncreaseScore(scoreValue);
+            }
+
             // Set auto destroy property, if this has an trail object.
             if (this.trailObject != null)
             {
@@ -179,7 +188,6 @@ namespace MinimalShooting
                 // Enable it.
                 selfDestroy.enabled = true;
             }
-
             // Destroy this enemey.
             Destroy(gameObject);
         }

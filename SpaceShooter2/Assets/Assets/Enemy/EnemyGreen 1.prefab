@@ -184,6 +184,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91b9457ed34b3d546a4f1ecbd40fbdbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreValue: 2
   prefabDamage: {fileID: 5677757216019247570, guid: 31dce7d79db19264f880bd38a6fddb4d,
     type: 3}
   prefabExplosion: {fileID: 100000, guid: c8fd86fe5050dc04bb501b291c30f591, type: 3}
@@ -194,6 +195,7 @@ MonoBehaviour:
   scaleMin: 0.8
   scaleMax: 1.2
   maxHp: 3
+  scoreSystem: {fileID: 0}
 --- !u!54 &2659143976182174506
 Rigidbody:
   m_ObjectHideFlags: 0
