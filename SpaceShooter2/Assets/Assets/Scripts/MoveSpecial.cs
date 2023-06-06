@@ -21,7 +21,7 @@ public class MoveSpecial : MonoBehaviour
 
     void MoveObjectToNewLocation()
     {
-        Vector3 newPosition = new Vector3(575, objectToMove.transform.position.y, objectToMove.transform.position.z);
+        Vector3 newPosition = new Vector3(580, objectToMove.transform.position.y, objectToMove.transform.position.z);
         objectToMove.transform.position = newPosition;
     }
 

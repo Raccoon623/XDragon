@@ -260,6 +260,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91b9457ed34b3d546a4f1ecbd40fbdbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreSystem: {fileID: 0}
+  scoreValue: 1
   prefabDamage: {fileID: 5677757216019247570, guid: 31dce7d79db19264f880bd38a6fddb4d,
     type: 3}
   prefabExplosion: {fileID: 100000, guid: 13266a9cf8da28e41bfa61b378dfabc5, type: 3}

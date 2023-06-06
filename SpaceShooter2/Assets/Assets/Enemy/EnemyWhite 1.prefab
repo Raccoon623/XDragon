@@ -225,6 +225,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91b9457ed34b3d546a4f1ecbd40fbdbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreSystem: {fileID: 0}
+  scoreValue: 50
   prefabDamage: {fileID: 5677757216019247570, guid: 6e7c5a85fbb61d4448b8e9994d529dfe,
     type: 3}
   prefabExplosion: {fileID: 100000, guid: 2a6951ec14b27ed4da27d13818dbebd2, type: 3}

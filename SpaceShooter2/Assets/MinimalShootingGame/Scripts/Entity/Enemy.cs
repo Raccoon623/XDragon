@@ -18,7 +18,8 @@ namespace MinimalShooting
             Circle,
         }
 
-        public int scoreValue = 1; // Score value for destroying this enemy
+        public ScoreManager scoreSystem;
+        public int scoreValue = 10;
 
         [Header("Prefab damage")]
         [SerializeField]
@@ -66,7 +67,6 @@ namespace MinimalShooting
         GameObject trailObject;
         List<Weapon> weapons;
         GameObject player;
-
 
         public void Wakeup()
         {
@@ -126,6 +126,7 @@ namespace MinimalShooting
 
         void Start()
         {
+            scoreSystem = FindObjectOfType<ScoreManager>();
             currentHp = maxHp;
             // Check if the prefab name is EnemyWhite 1
             if (gameObject.name == "EnemyWhite 1")
@@ -134,8 +135,6 @@ namespace MinimalShooting
             }
         }
 
-        // Reference to the ScoreSystem script
-        public ScoreSystem scoreSystem;
         /// <summary>
         /// When the enemy gets damaged.
         /// </summary>
@@ -172,12 +171,12 @@ namespace MinimalShooting
             // Instantiate the destroy effect.
             GameObject.Instantiate(this.prefabExplosion, transform.position, Quaternion.identity);
 
-            if (ScoreSystem.Instance != null)
+            if (scoreSystem != null)
             {
-                ScoreSystem.Instance.IncreaseScore(scoreValue);
+                scoreSystem.IncreaseScore(scoreValue);
             }
 
-            // Set auto destroy property, if this has an trail object.
+            // Set auto destroy property, if this has a trail object.
             if (this.trailObject != null)
             {
                 SelfDestroyed selfDestroy = this.trailObject.AddComponent<SelfDestroyed>();
@@ -188,13 +187,14 @@ namespace MinimalShooting
                 // Enable it.
                 selfDestroy.enabled = true;
             }
-            // Destroy this enemey.
+
+            // Destroy this enemy.
             Destroy(gameObject);
         }
 
 
-        // Update is called once per frame
-        void Update()
+    // Update is called once per frame
+    void Update()
         {
             MoveByType();
             MoveTrailObject();
