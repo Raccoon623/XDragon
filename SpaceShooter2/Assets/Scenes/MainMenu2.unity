@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.003906472, g: 0.018258488, b: 0.078171976, a: 1}
+  m_IndirectSpecularColor: {r: 0.006034509, g: 0.034797475, b: 0.12629914, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -13331,7 +13331,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9030c1da68f4094cabf1483e9244bea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  particleEffectPrefab1: {fileID: 100004, guid: bfd22e2b0a4f7a94c904468edc850684,
+  particleEffectPrefab1: {fileID: 100004, guid: a2b58a5cadc401f4aa9c9c2e527bb328,
     type: 3}
   particleEffectPrefab2: {fileID: 0}
 --- !u!1 &1794856021
