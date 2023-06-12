@@ -347,9 +347,9 @@ GameObject:
   - component: {fileID: 2246129215633105459}
   - component: {fileID: 3217784964648147336}
   - component: {fileID: 3267233581089968515}
-  - component: {fileID: 8912173837663930443}
+  - component: {fileID: 2578836730403142247}
   m_Layer: 0
-  m_Name: PlayerBulletMissile
+  m_Name: PlayerBulletMissile 1
   m_TagString: PlayerBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -517,7 +517,7 @@ LineRenderer:
   m_UseWorldSpace: 1
   m_Loop: 0
   m_ApplyActiveColorSpace: 0
---- !u!65 &8912173837663930443
+--- !u!65 &2578836730403142247
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5519,12 +5519,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 7d006511decf3a74c90a5477c6b9320d, type: 2}
+      objectReference: {fileID: 2100000, guid: de5641a528ba32a4cbc37e7cf313d093, type: 2}
     - target: {fileID: 7644553209094599551, guid: df53d34129a380d41b4c88db141798e6,
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 2100000, guid: 99f02cf44e1961c44b22170cb3615857, type: 2}
+      objectReference: {fileID: 2100000, guid: 7d006511decf3a74c90a5477c6b9320d, type: 2}
     - target: {fileID: 7644553209094599551, guid: df53d34129a380d41b4c88db141798e6,
         type: 3}
       propertyPath: m_Materials.Array.data[2]

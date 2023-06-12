@@ -45,11 +45,11 @@ public class ScoreManager : MonoBehaviour
 
     private void UpdateScoreText()
     {
-        scoreText.text = "Score: " + Score.ToString();
+        scoreText.text = "" + Score.ToString();
     }
 
     private void UpdateHighScoreText()
     {
-        highScoreText.text = "HI Score: " + HighScore.ToString();
+        highScoreText.text = "" + HighScore.ToString();
     }
 }

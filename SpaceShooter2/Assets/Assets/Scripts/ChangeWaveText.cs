@@ -24,7 +24,7 @@ public class ChangeWaveText : MonoBehaviour
         
         if (timer >= 90f)
         {
-            waveText.text = "UFO Boss";
+            waveText.text = "UFO";
             // You may want to add code here to trigger the boss battle
             // once the text has changed.
         }
