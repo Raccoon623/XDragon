@@ -12,9 +12,10 @@ public class NemesisON : MonoBehaviour
     public Button trueButton;
     public GameObject objectToToggleOff;
     public GameObject objectToToggleOn;
-    public TextMeshProUGUI textMesh;
+    public TMP_Text textMesh; // Change the type to TMP_Text
     public Color onColor;
     public Color offColor;
+    public GameObject colorChangeTarget; // Drag and drop the target object here
 
     private void Start()
     {
@@ -23,6 +24,7 @@ public class NemesisON : MonoBehaviour
 
         LoadBoolValue();
         ToggleObjects();
+        ChangeColor();
     }
 
     private void LoadBoolValue()
@@ -46,6 +48,7 @@ public class NemesisON : MonoBehaviour
         boolValue = false;
         ToggleObjects();
         SaveBoolValue();
+        ChangeColor();
     }
 
     public void SetTrue()
@@ -53,6 +56,7 @@ public class NemesisON : MonoBehaviour
         boolValue = true;
         ToggleObjects();
         SaveBoolValue();
+        ChangeColor();
     }
 
     private void ToggleObjects()
@@ -66,9 +70,28 @@ public class NemesisON : MonoBehaviour
         // Update the buttons' interactability based on the boolValue
         falseButton.interactable = boolValue;
         trueButton.interactable = !boolValue;
+    }
 
-        // Change the font color based on the boolValue
+    private void ChangeColor()
+    {
         if (textMesh != null)
-            textMesh.color = boolValue ? onColor : offColor;
+        {
+            if (boolValue)
+                textMesh.color = onColor;
+            else
+                textMesh.color = offColor;
+        }
+
+        if (colorChangeTarget != null)
+        {
+            Renderer renderer = colorChangeTarget.GetComponent<Renderer>();
+            if (renderer != null)
+            {
+                if (boolValue)
+                    renderer.material.color = onColor;
+                else
+                    renderer.material.color = offColor;
+            }
+        }
     }
 }

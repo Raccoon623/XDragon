@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ScoreReset : MonoBehaviour
 {
@@ -7,13 +8,17 @@ public class ScoreReset : MonoBehaviour
 
     private void Start()
     {
-        // Find the ScoreManager component in the scene
-        scoreManager = FindObjectOfType<ScoreManager>();
-
-        if (scoreManager != null && !hasResetScore)
+        // Check if the current scene is Level1
+        if (SceneManager.GetActiveScene().buildIndex == 2)
         {
-            scoreManager.ResetScore();
-            hasResetScore = true;
+            // Find the ScoreManager component in the scene
+            scoreManager = FindObjectOfType<ScoreManager>();
+
+            if (scoreManager != null && !hasResetScore)
+            {
+                scoreManager.ResetScore();
+                hasResetScore = true;
+            }
         }
     }
 }

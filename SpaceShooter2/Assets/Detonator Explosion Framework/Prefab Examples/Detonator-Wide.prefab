@@ -288,6 +288,6 @@ MonoBehaviour:
   startForce: {x: 0, y: 0, z: 0}
   force: {x: 0, y: -9.81, z: 0}
   startVelocity: {x: 0, y: 0, z: 0}
-  velocity: {x: 50, y: 50, z: 50}
+  velocity: {x: 25, y: 25, z: 25}
   detailThreshold: 0
   sparksMaterial: {fileID: 0}

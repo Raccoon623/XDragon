@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1.52
   m_AmbientMode: 1
   m_SubtractiveShadowColor: {r: 0.51744395, g: 0.6031665, b: 0.8018868, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 369b9ebe3a62b904dbc19bd332b44086, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: f531e09e2ad2fb440b4eed7605863143, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -1693,8 +1693,8 @@ MonoBehaviour:
   startDelay: 2
   intervalMin: 1
   intervalMax: 1
-  countMin: 1
-  countMax: 1
+  countMin: 2
+  countMax: 2
   spawnArea: {x: 5, y: 1, z: 2}
 --- !u!4 &732039634
 Transform:
@@ -1834,8 +1834,8 @@ MonoBehaviour:
   startDelay: 2
   intervalMin: 1
   intervalMax: 1
-  countMin: 2
-  countMax: 2
+  countMin: 3
+  countMax: 3
   spawnArea: {x: 5, y: 1, z: 2}
 --- !u!4 &753226916
 Transform:
@@ -3526,8 +3526,8 @@ MonoBehaviour:
   startDelay: 2
   intervalMin: 1
   intervalMax: 1
-  countMin: 1
-  countMax: 1
+  countMin: 2
+  countMax: 2
   spawnArea: {x: 5, y: 1, z: 2}
 --- !u!4 &1553699103
 Transform:
@@ -4151,7 +4151,7 @@ PrefabInstance:
     - target: {fileID: 496793427747885027, guid: d426b1c712faa36488bf04fc25f42ec6,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.99
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 496793427747885027, guid: d426b1c712faa36488bf04fc25f42ec6,
         type: 3}
@@ -4232,7 +4232,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6edf1fbd26d1dc349b6da5e5191096ef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ufoBossPrefab: {fileID: 8510579589746802706, guid: 2659d8ca05e7aed4381a4ca9cd27736f,
+  ufoBossPrefab: {fileID: 8510579589746802706, guid: 867379ec64b10a34ab626b96d02484a1,
     type: 3}
   spawnDelay: 3
 --- !u!4 &1858509735
@@ -4676,7 +4676,7 @@ PrefabInstance:
     - target: {fileID: 7226996553993799186, guid: 18cd8a58169847f4fbcbde622bf73095,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.7
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7226996553993799186, guid: 18cd8a58169847f4fbcbde622bf73095,
         type: 3}
@@ -4898,7 +4898,7 @@ PrefabInstance:
     - target: {fileID: 496793427747885027, guid: d426b1c712faa36488bf04fc25f42ec6,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.22
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 496793427747885027, guid: d426b1c712faa36488bf04fc25f42ec6,
         type: 3}
@@ -5136,7 +5136,7 @@ PrefabInstance:
     - target: {fileID: 7226996553993799186, guid: 18cd8a58169847f4fbcbde622bf73095,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.097649
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 7226996553993799186, guid: 18cd8a58169847f4fbcbde622bf73095,
         type: 3}

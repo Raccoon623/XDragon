@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.004460704, g: 0.023092737, b: 0.094762035, a: 1}
+  m_IndirectSpecularColor: {r: 0.0019684955, g: 0.008168073, b: 0.034771904, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -652,7 +652,6 @@ GameObject:
   - component: {fileID: 40191229}
   - component: {fileID: 40191230}
   - component: {fileID: 40191231}
-  - component: {fileID: 40191232}
   m_Layer: 0
   m_Name: JustEmpty
   m_TagString: Untagged
@@ -707,25 +706,10 @@ MonoBehaviour:
   trueButton: {fileID: 1251558482}
   objectToToggleOff: {fileID: 1776746972}
   objectToToggleOn: {fileID: 1790520817}
-  textMesh: {fileID: 0}
-  onColor: {r: 0, g: 0, b: 0, a: 0}
-  offColor: {r: 0, g: 0, b: 0, a: 0}
---- !u!114 &40191232
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 40191228}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7f27bdaccdd76546aaceec33c33d74e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  boolValueKey: NemesisBoolValue
-  defaultValue: 0
-  objectToToggleOn: {fileID: 1790520817}
-  objectToToggleOff: {fileID: 1776746972}
+  textMesh: {fileID: 1810717434}
+  onColor: {r: 1, g: 0.34509805, b: 0.34509805, a: 1}
+  offColor: {r: 0.43137255, g: 0.43137255, b: 1, a: 1}
+  colorChangeTarget: {fileID: 1810717432}
 --- !u!1 &52179318
 GameObject:
   m_ObjectHideFlags: 0
