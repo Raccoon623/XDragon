@@ -14,7 +14,7 @@ namespace MinimalShooting
                 SimpleMovement movement = other.gameObject.GetComponent<SimpleMovement>();
                 if (movement != null)
                 {
-                    movement.KeyboardMovementSpeed = 7f;
+                    movement.KeyboardMovementSpeed = 6f;
 
                     // Destroy this object
                     Destroy(gameObject);

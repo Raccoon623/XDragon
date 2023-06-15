@@ -229,7 +229,7 @@ MonoBehaviour:
   scoreValue: 80
   prefabDamage: {fileID: 5677757216019247570, guid: 6e7c5a85fbb61d4448b8e9994d529dfe,
     type: 3}
-  prefabExplosion: {fileID: 100000, guid: 2a6951ec14b27ed4da27d13818dbebd2, type: 3}
+  prefabExplosion: {fileID: 100000, guid: 5ce5ad87f36603c498f8913480b6de63, type: 3}
   speedMin: 0.2
   speedMax: 0.2
   direction: {x: 0, y: 0, z: -1}
